@@ -23,7 +23,7 @@ export function Hero() {
       <div className="w-full max-w-[1050px] px-5 pt-28 pb-18 text-center">
         <p className="animate-[hero-fade-up_.7s_cubic-bezier(.22,1,.36,1)_both] inline-flex items-center gap-2 rounded-full border border-[#65891c]/50 bg-[#65891c]/15 px-3.5 py-2 font-mono text-[11px] uppercase tracking-[.2em] text-[#bafc0c]">
           <span className="size-1.5 rounded-full bg-[#bafc0c] shadow-[0_0_10px_#bafc0c]" />
-          Obtenez votre MVP gratuitement
+          Obtenez votre prototype gratuitement
         </p>
         <h1 className="mt-6 text-balance text-[42px] font-black leading-[.96] tracking-[-.045em] sm:text-[56px] lg:text-[85px]">
           <span className="hero-line">
@@ -48,7 +48,7 @@ export function Hero() {
             href="#project-form"
           >
             <Rocket size={19} aria-hidden="true" />
-            Obtenez votre MVP gratuitement
+            Obtenez votre prototype gratuitement
             <ArrowRight size={19} aria-hidden="true" />
           </a>
         </div>

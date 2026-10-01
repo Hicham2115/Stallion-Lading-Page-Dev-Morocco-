@@ -46,7 +46,7 @@ export function DevelopmentService() {
             href="#project-form"
             className="mt-8 inline-flex min-h-13 items-center rounded-xl bg-[#bafc0c] px-5 py-3.5 text-[15px] font-extrabold text-[#0a0c0d] shadow-[0_0_30px_rgba(186,252,12,.25)] transition hover:-translate-y-0.5 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#bafc0c]"
           >
-            Obtenez votre MVP gratuitement
+            Obtenez votre prototype gratuitement
           </a>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">

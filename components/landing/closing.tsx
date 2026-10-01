@@ -75,7 +75,7 @@ function SelectField({
         onClick={() => setOpen((current) => !current)}
         className="flex min-h-13 w-full items-center justify-between rounded-xl border border-white/12 bg-[#0d1011] px-4 text-left text-[15px] text-white transition hover:border-[#65891c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#bafc0c]"
       >
-        <span className={value ? "text-white" : "text-[#777d7e]"}>
+        <span className={`${value ? "text-white" : "text-[#777d7e]"} lg:whitespace-nowrap`}>
           {value || `Choisir : ${label.toLowerCase()}`}
         </span>
         <ChevronDown
@@ -123,7 +123,7 @@ export function Closing() {
   const [submitted, setSubmitted] = useState(false);
   const started = useRef(false);
   useEffect(() => {
-    trackPixel("ViewContent", { content_name: "Formulaire MVP gratuit" });
+    trackPixel("ViewContent", { content_name: "Formulaire prototype gratuit" });
   }, []);
   const form = useForm({
     defaultValues: {
@@ -142,7 +142,7 @@ export function Closing() {
     mutationFn: async (values: typeof form.state.values) => {
       const data = projectSchema.parse(values);
       const message = [
-        "Bonjour Stallion Advertising, je souhaite discuter de la création gratuite d’un MVP.",
+        "Bonjour Stallion Advertising, je souhaite discuter de la création gratuite d’un prototype.",
         "",
         `Type de produit : ${data.projectType}`,
         `Délai de lancement : ${data.timeline}`,
@@ -158,21 +158,21 @@ export function Closing() {
       );
     },
     onSuccess: () => {
-      trackPixel("CompleteRegistration", { content_name: "Demande de MVP gratuit" });
+      trackPixel("CompleteRegistration", { content_name: "Demande de prototype gratuit" });
       setSubmitted(true);
     },
   });
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    trackPixel("Lead", { content_name: "Demande de MVP gratuit" });
+    trackPixel("Lead", { content_name: "Demande de prototype gratuit" });
     form.handleSubmit();
   }
 
   function handleStart() {
     if (started.current) return;
     started.current = true;
-    trackPixel("InitiateCheckout", { content_name: "Formulaire MVP gratuit" });
+    trackPixel("InitiateCheckout", { content_name: "Formulaire prototype gratuit" });
   }
 
   return (
@@ -185,7 +185,7 @@ export function Closing() {
           DÉMARRER UN PROJET
         </p>
         <h2 className="mt-4 text-center text-[42px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
-          Contactez-nous pour votre MVP gratuit.
+          Contactez-nous pour votre prototype gratuit.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-center text-[16px] text-[#b6b9bb]">
           Parlez-nous de votre idée. Nous vous répondrons pour vous proposer la
@@ -287,7 +287,7 @@ export function Closing() {
               disabled={!projectType || !timeline}
               className="inline-flex min-h-13 w-full items-center justify-center gap-2.5 rounded-xl bg-[#bafc0c] px-5 py-3.5 text-[15px] font-extrabold text-[#0a0c0d] shadow-[0_0_30px_rgba(186,252,12,.3)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#bafc0c]"
             >
-              Obtenez votre MVP gratuitement
+              Obtenez votre prototype gratuitement
               <ArrowRight size={19} aria-hidden="true" />
             </button>
           </form>

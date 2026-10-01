@@ -11,7 +11,7 @@ const steps = [
   [
     "02",
     "DÉFINIR",
-    "Définissons le MVP",
+    "Définissons le prototype",
     "Nous transformons votre idée en un périmètre précis, des étapes claires et un échéancier de paiement adapté.",
     Blocks,
   ],
