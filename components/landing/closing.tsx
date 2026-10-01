@@ -40,11 +40,13 @@ const projectSchema = z.object({
 
 function SelectField({
   label,
+  placeholder,
   value,
   options,
   onChange,
 }: {
   label: string;
+  placeholder?: string;
   value: string;
   options: string[];
   onChange: (value: string) => void;
@@ -76,7 +78,7 @@ function SelectField({
         className="flex min-h-13 w-full items-center justify-between rounded-xl border border-white/12 bg-[#0d1011] px-4 text-left text-[15px] text-white transition hover:border-[#65891c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#bafc0c]"
       >
         <span className={`${value ? "text-white" : "text-[#777d7e]"} lg:whitespace-nowrap`}>
-          {value || `Choisir : ${label.toLowerCase()}`}
+          {value || placeholder || `Choisir : ${label.toLowerCase()}`}
         </span>
         <ChevronDown
           size={18}
@@ -219,6 +221,7 @@ export function Closing() {
               />
               <SelectField
                 label="Quand souhaitez-vous lancer votre projet ?"
+                placeholder="Choisir un délai de lancement"
                 value={timeline}
                 options={timelines}
                 onChange={(value) => form.setFieldValue("timeline", value)}
