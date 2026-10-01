@@ -66,7 +66,7 @@ export function Process() {
                   <span>{label}</span>
                   <span className="text-white/35">{number}</span>
                 </div>
-                <h3 className="mt-8 text-[20px] font-black">{title}</h3>
+                <h3 className="mt-8 text-[20px] font-black lg:whitespace-nowrap">{title}</h3>
                 <p className="mt-3 text-[14px] leading-relaxed text-[#b6b9bb]">
                   {text}
                 </p>
