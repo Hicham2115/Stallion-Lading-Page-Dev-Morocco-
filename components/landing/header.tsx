@@ -28,7 +28,7 @@ export function Header() {
         </span>
       </a>
       <nav
-        className="flex items-center gap-1 text-sm font-semibold text-gray-300"
+        className="flex items-center gap-1 text-sm font-semibold text-white"
         aria-label="Navigation principale"
       >
         <a
