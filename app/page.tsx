@@ -16,7 +16,9 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#0a0c0d] text-[#f9faf9] selection:bg-[#bafc0c] selection:text-[#0a0c0d]">
       <Background />
-      <div className="fixed inset-x-0 top-0 z-[60] bg-[#bafc0c] px-4 py-2 text-center font-mono text-[12px] font-bold tracking-[.14em] text-[#0a0c0d] sm:text-[14px]">Nothing Below €3,000</div>
+      <div className="fixed inset-x-0 top-0 z-[60] bg-[#bafc0c] px-4 py-2 text-center font-mono text-[12px] font-bold tracking-[.14em] text-[#0a0c0d] sm:text-[14px]">
+        Projets à partir de 10.000 DH
+      </div>
       <Header />
       <Hero />
       <Ticker />

@@ -16,60 +16,60 @@ export function Footer() {
             </span>
           </a>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#b6b9bb]">
-            Transforming businesses through digital solutions that drive
-            measurable growth.
+            Nous transformons les entreprises grâce à des solutions numériques
+            qui stimulent une croissance mesurable.
           </p>
         </div>
         <div className="grid content-start gap-3">
           <h3 className="text-xs font-black uppercase tracking-[.08em]">
-            Quick Links
+            Liens rapides
           </h3>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#top"
           >
-            Home
+            Accueil
           </a>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#development-service"
           >
-            Development service
+            Développement
           </a>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#case-studies"
           >
-            Case studies
+            Réalisations
           </a>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#team"
           >
-            Our team
+            Notre équipe
           </a>
         </div>
         <div className="grid content-start gap-3">
           <h3 className="text-xs font-black uppercase tracking-[.08em]">
-            Explore
+            Explorer
           </h3>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#faq"
           >
-            FAQ
+            Questions fréquentes
           </a>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#testimonials"
           >
-            Testimonials
+            Témoignages
           </a>
           <a
             className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
             href="#project-form"
           >
-            Contact us
+            Nous contacter
           </a>
           <a
             className="flex items-center gap-2 text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
@@ -92,7 +92,7 @@ export function Footer() {
         </div>
       </div>
       <p className="py-6 text-center text-xs text-[#818789]">
-        © {new Date().getFullYear()} Stallion Advertising. All rights reserved.
+        © {new Date().getFullYear()} Stallion Advertising. Tous droits réservés.
       </p>
     </footer>
   );

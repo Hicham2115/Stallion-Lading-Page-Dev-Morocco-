@@ -20,7 +20,7 @@ export function Header() {
       <a
         className="flex items-center gap-2 text-xs font-extrabold tracking-[.08em] sm:text-sm"
         href="#top"
-        aria-label="Stallion Advertising home"
+        aria-label="Accueil de Stallion Advertising"
       >
         <Image src="/unicorn.png" alt="" width={28} height={28} priority />
         <span>
@@ -29,37 +29,37 @@ export function Header() {
       </a>
       <nav
         className="flex items-center gap-1 text-sm font-semibold text-gray-300"
-        aria-label="Main navigation"
+        aria-label="Navigation principale"
       >
         <a
           className="hidden px-3 py-2 hover:text-[#bafc0c] md:block"
           href="#development-service"
         >
-          Development
+          Développement
         </a>
         <a
           className="hidden px-3 py-2 hover:text-[#bafc0c] lg:block"
           href="#case-studies"
         >
-          Case Studies
+          Réalisations
         </a>
         <a
           className="hidden px-3 py-2 hover:text-[#bafc0c] lg:block"
           href="#team"
         >
-          Team
+          Équipe
         </a>
         <a
           className="hidden px-3 py-2 hover:text-[#bafc0c] lg:block"
           href="#faq"
         >
-          FAQ
+          Questions fréquentes
         </a>
         <a
           className="ml-1 rounded-xl border-2 border-[#65891c] px-3 py-2 text-white hover:bg-[#65891c]"
           href="#project-form"
         >
-          Contact Us
+          Nous contacter
         </a>
       </nav>
     </header>

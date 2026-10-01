@@ -2,28 +2,28 @@ import { ArrowRight, Plus } from "lucide-react";
 
 const questions = [
   [
-    "Can I customize my payment plan?",
-    "Absolutely, we tailor payment schedules to suit your needs, offering flexible monthly installment options.",
+    "Puis-je personnaliser mon échéancier de paiement ?",
+    "Bien sûr. Nous adaptons les échéances à vos besoins et proposons des mensualités flexibles.",
   ],
   [
-    "What are the cost of building an app/software?",
-    "Pricing starts at 20k and varies based on project complexity, features, and customization requirements.",
+    "Combien coûte la création d’une application ou d’un logiciel ?",
+    "Les projets commencent à 10 000 DH. Le tarif final dépend de la complexité, des fonctionnalités et du niveau de personnalisation souhaité.",
   ],
   [
-    "What's the typical timeframe for project completion?",
-    "On average, expect a development timeline of 3-8 months, though this may vary based on project scope and specifications.",
+    "Combien de temps faut-il généralement pour réaliser un projet ?",
+    "Le développement prend en moyenne de 3 à 8 mois, selon l’ampleur et les spécifications du projet.",
   ],
   [
-    "Do you offer ongoing support after launch?",
-    "Yes, we provide comprehensive post-launch support to ensure your application continues to perform optimally and evolve with your needs.",
+    "Proposez-vous un accompagnement après le lancement ?",
+    "Oui. Nous assurons un accompagnement complet après le lancement pour que votre application reste performante et évolue avec vos besoins.",
   ],
   [
-    "Can I integrate third-party tools or services into my app or software?",
-    "Absolutely, we specialize in seamless integration of third-party APIs and services to enhance functionality and user experience.",
+    "Puis-je intégrer des outils ou services tiers à mon application ou logiciel ?",
+    "Bien sûr. Nous intégrons des API et des services tiers de façon fluide afin d’enrichir les fonctionnalités et l’expérience utilisateur.",
   ],
   [
-    "Are the solutions scalable for future growth?",
-    "Yes, our development solutions are designed with scalability in mind, allowing for easy expansion and adaptation as your business evolves.",
+    "Vos solutions peuvent-elles évoluer avec mon activité ?",
+    "Oui. Nos solutions sont conçues pour s’adapter et évoluer facilement au rythme de votre entreprise.",
   ],
 ];
 
@@ -36,20 +36,20 @@ export function Faq() {
       <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="font-mono text-[11px] uppercase tracking-[.2em] text-[#bafc0c]">
-            Questions, answered
+            Vos questions, nos réponses
           </p>
           <h2 className="mt-4 text-balance text-[40px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
-            The useful stuff, <em className="text-[#bafc0c]">up front.</em>
+            Les réponses <em className="text-[#bafc0c]">sans détour.</em>
           </h2>
           <p className="mt-6 max-w-md text-[16px] leading-relaxed text-[#b6b9bb]">
-            A good development partner should make the path clearer. Here are
-            the answers to the questions we hear most often.
+            Un bon partenaire de développement doit clarifier la marche à suivre.
+            Voici les réponses aux questions que l’on nous pose le plus souvent.
           </p>
           <a
             href="#project-form"
             className="mt-8 inline-flex items-center gap-2 text-[15px] font-bold text-[#bafc0c] hover:text-white"
           >
-            Still have a question? Talk to us{" "}
+            Une autre question ? Parlons-en{" "}
             <ArrowRight size={17} aria-hidden="true" />
           </a>
         </div>

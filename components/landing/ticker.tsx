@@ -19,7 +19,7 @@ const logos = [
 export function Ticker() {
   return (
     <section
-      aria-label="Clients and partners"
+      aria-label="Clients et partenaires"
       className="relative z-1 overflow-hidden border-y border-white/10 bg-white/[.025] py-5"
     >
       <div className="flex w-max animate-[marquee_38s_linear_infinite] items-center">

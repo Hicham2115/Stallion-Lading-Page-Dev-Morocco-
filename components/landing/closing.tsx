@@ -15,19 +15,19 @@ const trackPixel = (event: string, data?: Record<string, unknown>) =>
   window.fbq?.("track", event, data);
 
 const projectTypes = [
-  "Static website",
-  "Online store",
+  "Site vitrine",
+  "Boutique en ligne",
   "CRM",
-  "Platform",
-  "Mobile app",
-  "SaaS product",
+  "Plateforme",
+  "Application mobile",
+  "Produit SaaS",
 ];
 const timelines = [
-  "Within 1 month",
-  "Within 2–3 months",
-  "Within 6 months",
-  "Within a year",
-  "I am not sure yet",
+  "Dans le mois",
+  "Dans 2 à 3 mois",
+  "Dans les 6 mois",
+  "Dans l’année",
+  "Je ne sais pas encore",
 ];
 const projectSchema = z.object({
   projectType: z.string().min(1),
@@ -76,7 +76,7 @@ function SelectField({
         className="flex min-h-13 w-full items-center justify-between rounded-xl border border-white/12 bg-[#0d1011] px-4 text-left text-[15px] text-white transition hover:border-[#65891c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#bafc0c]"
       >
         <span className={value ? "text-white" : "text-[#777d7e]"}>
-          {value || `Choose ${label.toLowerCase()}`}
+          {value || `Choisir : ${label.toLowerCase()}`}
         </span>
         <ChevronDown
           size={18}
@@ -123,7 +123,7 @@ export function Closing() {
   const [submitted, setSubmitted] = useState(false);
   const started = useRef(false);
   useEffect(() => {
-    trackPixel("ViewContent", { content_name: "Free MVP form" });
+    trackPixel("ViewContent", { content_name: "Formulaire MVP gratuit" });
   }, []);
   const form = useForm({
     defaultValues: {
@@ -142,14 +142,14 @@ export function Closing() {
     mutationFn: async (values: typeof form.state.values) => {
       const data = projectSchema.parse(values);
       const message = [
-        "Hello Stallion Advertising, I would like to discuss a free MVP.",
+        "Bonjour Stallion Advertising, je souhaite discuter de la création gratuite d’un MVP.",
         "",
-        `Product type: ${data.projectType}`,
-        `Launch timeline: ${data.timeline}`,
-        `Name: ${data.name}`,
-        `Role: ${data.role || "Not specified"}`,
-        `Email: ${data.email}`,
-        `Phone: ${data.phone}`,
+        `Type de produit : ${data.projectType}`,
+        `Délai de lancement : ${data.timeline}`,
+        `Nom : ${data.name}`,
+        `Fonction : ${data.role || "Non précisée"}`,
+        `E-mail : ${data.email}`,
+        `Téléphone : ${data.phone}`,
       ].join("\n");
       window.open(
         `https://wa.me/31687627929?text=${encodeURIComponent(message)}`,
@@ -158,21 +158,21 @@ export function Closing() {
       );
     },
     onSuccess: () => {
-      trackPixel("CompleteRegistration", { content_name: "Free MVP request" });
+      trackPixel("CompleteRegistration", { content_name: "Demande de MVP gratuit" });
       setSubmitted(true);
     },
   });
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    trackPixel("Lead", { content_name: "Free MVP request" });
+    trackPixel("Lead", { content_name: "Demande de MVP gratuit" });
     form.handleSubmit();
   }
 
   function handleStart() {
     if (started.current) return;
     started.current = true;
-    trackPixel("InitiateCheckout", { content_name: "Free MVP form" });
+    trackPixel("InitiateCheckout", { content_name: "Formulaire MVP gratuit" });
   }
 
   return (
@@ -182,14 +182,14 @@ export function Closing() {
     >
       <div className="mx-auto max-w-2xl">
         <p className="text-center font-mono text-[11px] uppercase tracking-[.2em] text-[#bafc0c]">
-          START A PROJECT
+          DÉMARRER UN PROJET
         </p>
         <h2 className="mt-4 text-center text-[42px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
-          Contact us for a free MVP.
+          Contactez-nous pour votre MVP gratuit.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-center text-[16px] text-[#b6b9bb]">
-          Tell us a little about your idea. We&apos;ll get back to you with the
-          right next step.
+          Parlez-nous de votre idée. Nous vous répondrons pour vous proposer la
+          meilleure prochaine étape.
         </p>
         {submitted ? (
           <div className="mt-10 rounded-2xl border border-[#bafc0c]/30 bg-[#bafc0c]/10 p-8 text-center">
@@ -198,10 +198,10 @@ export function Closing() {
               size={28}
               aria-hidden="true"
             />
-            <h3 className="mt-4 text-[24px] font-bold">Thanks, we got it.</h3>
+            <h3 className="mt-4 text-[24px] font-bold">Merci, votre demande est envoyée.</h3>
             <p className="mt-2 text-[15px] text-[#b6b9bb]">
-              Our development team will review your project and contact you
-              soon.
+              Notre équipe de développement étudiera votre projet et vous contactera
+              dans les meilleurs délais.
             </p>
           </div>
         ) : (
@@ -212,13 +212,13 @@ export function Closing() {
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <SelectField
-                label="Type of product"
+                label="Type de produit"
                 value={projectType}
                 options={projectTypes}
                 onChange={(value) => form.setFieldValue("projectType", value)}
               />
               <SelectField
-                label="When do you want to launch?"
+                label="Quand souhaitez-vous lancer votre projet ?"
                 value={timeline}
                 options={timelines}
                 onChange={(value) => form.setFieldValue("timeline", value)}
@@ -226,7 +226,7 @@ export function Closing() {
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block text-[13px] font-semibold text-[#d9dcda]">
-                First and last name
+                Prénom et nom
                 <input
                   required
                   name="name"
@@ -235,12 +235,12 @@ export function Closing() {
                     form.setFieldValue("name", event.target.value)
                   }
                   className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
-                  placeholder="Your name"
+                  placeholder="Votre nom"
                 />
               </label>
               <label className="block text-[13px] font-semibold text-[#d9dcda]">
-                Role{" "}
-                <span className="font-normal text-[#777d7e]">(optional)</span>
+                Fonction{" "}
+                <span className="font-normal text-[#777d7e]">(facultatif)</span>
                 <input
                   name="role"
                   autoComplete="organization-title"
@@ -248,13 +248,13 @@ export function Closing() {
                     form.setFieldValue("role", event.target.value)
                   }
                   className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e]"
-                  placeholder="CEO, owner, manager..."
+                  placeholder="Dirigeant, propriétaire, responsable…"
                 />
               </label>
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block text-[13px] font-semibold text-[#d9dcda]">
-                Email
+                E-mail
                 <input
                   required
                   type="email"
@@ -268,7 +268,7 @@ export function Closing() {
                 />
               </label>
               <label className="block text-[13px] font-semibold text-[#d9dcda]">
-                Phone
+                Téléphone
                 <input
                   required
                   type="tel"
@@ -278,7 +278,7 @@ export function Closing() {
                     form.setFieldValue("phone", event.target.value)
                   }
                   className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
-                  placeholder="+31 ..."
+                  placeholder="+212 6XX XXX XXX"
                 />
               </label>
             </div>
@@ -287,7 +287,7 @@ export function Closing() {
               disabled={!projectType || !timeline}
               className="inline-flex min-h-13 w-full items-center justify-center gap-2.5 rounded-xl bg-[#bafc0c] px-5 py-3.5 text-[15px] font-extrabold text-[#0a0c0d] shadow-[0_0_30px_rgba(186,252,12,.3)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#bafc0c]"
             >
-              Get a Free MVP
+              Obtenez votre MVP gratuitement
               <ArrowRight size={19} aria-hidden="true" />
             </button>
           </form>

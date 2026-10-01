@@ -10,51 +10,51 @@ import {
 const members = [
   [
     "Bader",
-    "Co-Founder",
+    "Cofondateur",
     "/team/badr.png",
-    "Setting the vision, the offer, and the client relationship behind everything we build.",
+    "Définit la vision, l’offre et la relation client au cœur de chaque projet.",
   ],
   [
     "Abderrahmane",
-    "Co-Founder",
+    "Cofondateur",
     "/team/abderrahmane.png",
-    "Keeping delivery sharp and the team aligned, project after project.",
+    "Veille à la qualité des livraisons et à la cohésion de l’équipe, projet après projet.",
   ],
   [
     "Said",
-    "CTO, Senior Software Engineer & AI Specialist",
+    "Directeur technique, ingénieur logiciel senior et spécialiste IA",
     "/team/said.png",
-    "Architecting the systems and AI behind our most technically demanding builds.",
+    "Conçoit les systèmes et l’IA qui propulsent nos projets les plus exigeants sur le plan technique.",
   ],
   [
     "Hicham",
-    "Senior Full Stack Developer, Automation Specialist",
+    "Développeur full stack senior, spécialiste en automatisation",
     "/team/hicham-new.png",
-    "Full-stack engineering and automation that keep complex products running without friction.",
+    "Développe des produits complexes et automatise les processus pour assurer leur bon fonctionnement.",
   ],
   [
     "Mohammed",
-    "Senior Full Stack Developer , Seo Expert",
+    "Développeur full stack senior, expert SEO",
     "/team/mohamed.jpg",
-    "Building reliable, production-ready features across the full stack, from database to interface.",
+    "Crée des fonctionnalités fiables, prêtes à l’emploi, de la base de données à l’interface.",
   ],
   [
     "Anas",
-    "Junior Full Stack Developer",
+    "Développeur full stack junior",
     "/team/anass.png",
-    "Full-stack support across every active project, learning fast and shipping faster.",
+    "Contribue à tous les projets en cours, apprend rapidement et livre avec réactivité.",
   ],
   [
     "Salma",
-    "Head of Sales",
+    "Responsable commerciale",
     "/team/salma.jpeg",
-    "Leading the sales team and turning first conversations into signed, delivered projects.",
+    "Encadre l’équipe commerciale et transforme les premiers échanges en projets signés et livrés.",
   ],
   [
     "Meryem",
-    "Project Manager",
+    "Cheffe de projet",
     "/team/meryem.jpg",
-    "Organized project manager ensuring smooth execution, clear communication, and on-time delivery across all projects.",
+    "Organise les projets, assure une communication claire et veille au respect des délais de livraison.",
   ],
   // [
   //   "Amine",
@@ -64,39 +64,39 @@ const members = [
   // ],
   [
     "Marwan",
-    "Senior Video Editor",
+    "Monteur vidéo senior",
     "/team/marwan.png",
-    "Senior video editor creating engaging visual stories through cinematic editing, motion design, and strong storytelling.",
+    "Crée des récits visuels captivants grâce au montage cinématographique, au motion design et à une narration soignée.",
   ],
   [
     "Zakaria",
-    "Graphic Designer",
+    "Designer graphique",
     "/team/zakaria.jpg",
-    "Creative graphic designer crafting visually compelling brands through strong identity, typography, and modern design systems.",
+    "Conçoit des identités de marque percutantes grâce à un univers visuel fort, à la typographie et à des systèmes graphiques modernes.",
   ],
   [
     "Ayoub",
-    "Media Buyer",
+    "Spécialiste de l’achat média",
     "/team/unknown.png",
-    "Strategic media buyer focused on scaling campaigns through data-driven ad optimization, audience targeting, and performance analysis across digital platforms.",
+    "Développe les campagnes grâce à l’optimisation publicitaire fondée sur les données, au ciblage d’audience et à l’analyse des performances numériques.",
   ],
   [
     "Achraf",
-    "Sales",
+    "Commercial",
     "/team/unknown.png",
-    "Results-driven sales professional skilled in client acquisition, relationship management, and converting leads into long-term partnerships.",
+    "Développe le portefeuille client, entretient les relations et transforme les prospects en partenariats durables.",
   ],
   [
     "Nada Ez Zorzar",
-    "Sales",
+    "Commerciale",
     "/team/nada.png",
-    "The team behind every call and every follow-up, from your first message to a booked meeting.",
+    "Accompagne chaque échange et chaque suivi, de votre premier message jusqu’à la prise de rendez-vous.",
   ],
   [
     "Yassmine Dhibi",
-    "Sales",
+    "Commerciale",
     "/team/yassmine.png",
-    "The team behind every call and every follow-up, from your first message to a booked meeting.",
+    "Accompagne chaque échange et chaque suivi, de votre premier message jusqu’à la prise de rendez-vous.",
   ],
 ];
 
@@ -109,14 +109,14 @@ export function Team() {
       <div className="text-center">
         <p className="inline-flex items-center gap-2 rounded-full border border-[#65891c]/50 bg-[#65891c]/15 px-3.5 py-2 font-mono text-[11px] uppercase tracking-[.2em] text-[#bafc0c]">
           <span className="size-1.5 rounded-full bg-[#bafc0c]" />
-          The people behind the products
+          Les personnes derrière vos produits
         </p>
         <h2 className="mx-auto mt-5 text-balance text-[40px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
-          Meet the <em className="text-[#bafc0c]">team.</em>
+          Voici notre <em className="text-[#bafc0c]">équipe.</em>
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-[#b6b9bb] sm:text-[18px]">
-          Strategists, designers, engineers, and operators working together to
-          bring your product to life.
+          Des stratèges, designers, ingénieurs et spécialistes unissent leurs
+          compétences pour donner vie à votre produit.
         </p>
       </div>
       <Carousel
