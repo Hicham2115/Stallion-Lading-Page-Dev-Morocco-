@@ -4,9 +4,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.stallionadvertising.ma"),
-  title:
-    "Développement web au Maroc | Stallion Advertising",
+  metadataBase: new URL("https://it.stallionadvertising.ma"),
+  title: "Développement web au Maroc | Stallion Advertising",
   description:
     "Agence de développement web au Maroc : Stallion Advertising crée des sites web, applications et logiciels sur mesure pour les entreprises de Casablanca et de tout le royaume.",
   keywords: [
@@ -18,13 +17,12 @@ export const metadata: Metadata = {
     "sites web sur mesure",
     "Stallion Advertising",
   ],
-  alternates: { canonical: "https://www.stallionadvertising.ma/" },
+  alternates: { canonical: "https://it.stallionadvertising.ma/" },
   openGraph: {
-    title:
-      "Développement web au Maroc | Stallion Advertising",
+    title: "Développement web au Maroc | Stallion Advertising",
     description:
       "Sites web, applications et logiciels sur mesure créés au Maroc par l’équipe de développement de Stallion Advertising.",
-    url: "https://www.stallionadvertising.ma/",
+    url: "https://it.stallionadvertising.ma/",
     siteName: "Stallion Advertising",
     locale: "fr_MA",
     type: "website",
@@ -39,8 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title:
-      "Développement web au Maroc | Stallion Advertising",
+    title: "Développement web au Maroc | Stallion Advertising",
     description:
       "Sites web, applications et logiciels sur mesure créés au Maroc par l’équipe de développement de Stallion Advertising.",
     images: ["/unicorn.png"],
@@ -72,14 +69,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;
 n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
 s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');fbq('init','1074832125424906');fbq('track','PageView');`}
+'https://connect.facebook.net/en_US/fbevents.js');fbq('init','1080415321364828');fbq('track','PageView');`}
         </Script>
         <noscript>
           <img
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1074832125424906&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1080415321364828&ev=PageView&noscript=1"
             alt=""
           />
         </noscript>

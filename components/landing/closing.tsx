@@ -77,7 +77,9 @@ function SelectField({
         onClick={() => setOpen((current) => !current)}
         className="flex min-h-13 w-full items-center justify-between rounded-xl border border-white/12 bg-[#0d1011] px-4 text-left text-[15px] text-white transition hover:border-[#65891c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#bafc0c]"
       >
-        <span className={`${value ? "text-white" : "text-[#777d7e]"} lg:whitespace-nowrap`}>
+        <span
+          className={`${value ? "text-white" : "text-[#777d7e]"} lg:whitespace-nowrap`}
+        >
           {value || placeholder || `Choisir : ${label.toLowerCase()}`}
         </span>
         <ChevronDown
@@ -160,21 +162,25 @@ export function Closing() {
       );
     },
     onSuccess: () => {
-      trackPixel("CompleteRegistration", { content_name: "Demande de prototype gratuit" });
+      trackPixel("Lead", { content_name: "Demande de prototype gratuit" });
+      trackPixel("CompleteRegistration", {
+        content_name: "Demande de prototype gratuit",
+      });
       setSubmitted(true);
     },
   });
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    trackPixel("Lead", { content_name: "Demande de prototype gratuit" });
     form.handleSubmit();
   }
 
   function handleStart() {
     if (started.current) return;
     started.current = true;
-    trackPixel("InitiateCheckout", { content_name: "Formulaire prototype gratuit" });
+    trackPixel("InitiateCheckout", {
+      content_name: "Formulaire prototype gratuit",
+    });
   }
 
   return (
@@ -200,10 +206,12 @@ export function Closing() {
               size={28}
               aria-hidden="true"
             />
-            <h3 className="mt-4 text-[24px] font-bold">Merci, votre demande est envoyée.</h3>
+            <h3 className="mt-4 text-[24px] font-bold">
+              Merci, votre demande est envoyée.
+            </h3>
             <p className="mt-2 text-[15px] text-[#b6b9bb]">
-              Notre équipe de développement étudiera votre projet et vous contactera
-              dans les meilleurs délais.
+              Notre équipe de développement étudiera votre projet et vous
+              contactera dans les meilleurs délais.
             </p>
           </div>
         ) : (
