@@ -42,8 +42,7 @@ export function Process() {
           Comment ça marche
         </p>
         <h2 className="mt-4 text-[40px] font-black leading-[.95] tracking-[-.045em] sm:text-[62px]">
-          De l’idée au{" "}
-          <em className="text-[#bafc0c]">produit concret.</em>
+          De l’idée au <em className="text-[#bafc0c]">produit concret.</em>
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-[#aeb3b6]">
           Un parcours clair, de notre premier échange jusqu’à un produit que vos
@@ -66,7 +65,9 @@ export function Process() {
                   <span>{label}</span>
                   <span className="text-white/35">{number}</span>
                 </div>
-                <h3 className="mt-8 text-[20px] font-black lg:whitespace-nowrap">{title}</h3>
+                <h3 className="mt-8 text-[20px] font-black lg:whitespace-nowrap">
+                  {title}
+                </h3>
                 <p className="mt-3 text-[14px] leading-relaxed text-[#b6b9bb]">
                   {text}
                 </p>

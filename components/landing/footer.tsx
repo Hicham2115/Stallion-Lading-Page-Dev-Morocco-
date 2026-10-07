@@ -15,7 +15,7 @@ export function Footer() {
               STALLION <strong className="text-[#bafc0c]">ADVERTISING</strong>
             </span>
           </a>
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#b6b9bb]">
+          <p className="mt-5 max-w-xs text-sm leading-relaxed text-white">
             Nous transformons les entreprises grâce à des solutions numériques
             qui stimulent une croissance mesurable.
           </p>
@@ -25,25 +25,25 @@ export function Footer() {
             Liens rapides
           </h3>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#top"
           >
             Accueil
           </a>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#development-service"
           >
             Développement
           </a>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#case-studies"
           >
             Réalisations
           </a>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#team"
           >
             Notre équipe
@@ -54,25 +54,25 @@ export function Footer() {
             Explorer
           </h3>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#faq"
           >
             Questions fréquentes
           </a>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#testimonials"
           >
             Témoignages
           </a>
           <a
-            className="text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="text-sm text-white hover:text-[#bafc0c]"
             href="#project-form"
           >
             Nous contacter
           </a>
           <a
-            className="flex items-center gap-2 text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="flex items-center gap-2 text-sm text-white hover:text-[#bafc0c]"
             href="https://www.instagram.com/stallion_advertising/"
             target="_blank"
             rel="noreferrer"
@@ -81,7 +81,7 @@ export function Footer() {
             Instagram
           </a>
           <a
-            className="flex items-center gap-2 text-sm text-[#b6b9bb] hover:text-[#bafc0c]"
+            className="flex items-center gap-2 text-sm text-white hover:text-[#bafc0c]"
             href="https://www.linkedin.com/company/stallionadvertising/"
             target="_blank"
             rel="noreferrer"
@@ -91,7 +91,7 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <p className="py-6 text-center text-xs text-[#818789]">
+      <p className="py-6 text-center text-xs text-white">
         © {new Date().getFullYear()} Stallion Advertising. Tous droits réservés.
       </p>
     </footer>

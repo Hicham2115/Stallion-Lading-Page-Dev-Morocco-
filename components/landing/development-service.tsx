@@ -37,10 +37,11 @@ export function DevelopmentService() {
           <h2 className="mt-4 text-balance text-[40px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
             Des idées aux <em className="text-[#bafc0c]">produits concrets.</em>
           </h2>
-          <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-[#b6b9bb] sm:text-[18px]">
+          <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-[#f7f7f7] sm:text-[18px]">
             Notre équipe de développement vous accompagne de la première idée
             jusqu’au lancement. Nous allions réflexion produit, expertise
-            technique et méthode claire pour créer des logiciels qui font la différence.
+            technique et méthode claire pour créer des logiciels qui font la
+            différence.
           </p>
           <a
             href="#project-form"
@@ -61,7 +62,7 @@ export function DevelopmentService() {
               <h3 className="text-[19px] font-black tracking-[-.03em]">
                 {title}
               </h3>
-              <p className="mt-2 text-[14px] leading-relaxed text-[#b6b9bb]">
+              <p className="mt-2 text-[14px] leading-relaxed text-[#dcdfe1]">
                 {text}
               </p>
             </article>
