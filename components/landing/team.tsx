@@ -135,13 +135,13 @@ export function Team() {
               className="basis-full pl-4 sm:basis-1/2 lg:basis-1/3"
             >
               <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[.03] transition duration-300 hover:-translate-y-2 hover:border-[#65891c] hover:shadow-[0_0_30px_rgba(186,252,12,.2)]">
-                <div className="relative h-80 overflow-hidden bg-[#14171a] sm:h-96 md:h-[420px]">
+                <div className="relative h-[28rem] overflow-hidden bg-[#14171a] sm:h-[32rem] md:h-[min(600px,95vw)] lg:h-[600px]">
                   <Image
                     src={image}
                     alt={name}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
+                    className="object-cover object-top transition duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c0d] via-transparent to-transparent" />
                   <p className="absolute inset-x-4 bottom-4 translate-y-3 text-[13px] leading-relaxed text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
