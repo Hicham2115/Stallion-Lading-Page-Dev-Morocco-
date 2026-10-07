@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Sites web, applications et logiciels sur mesure créés au Maroc par l’équipe de développement de Stallion Advertising.",
     url: "https://it.stallionadvertising.ma/",
     siteName: "Stallion Advertising",
-    locale: "fr_MA",
+    locale: "fr_FR",
     type: "website",
     images: [
       {
