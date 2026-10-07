@@ -135,7 +135,7 @@ export function Team() {
               className="basis-full pl-4 sm:basis-1/2 lg:basis-1/3"
             >
               <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[.03] transition duration-300 hover:-translate-y-2 hover:border-[#65891c] hover:shadow-[0_0_30px_rgba(186,252,12,.2)]">
-                <div className="relative h-[28rem] overflow-hidden bg-[#14171a] sm:h-[32rem] md:h-[min(600px,95vw)] lg:h-[600px]">
+                <div className="relative h-[28rem] overflow-hidden bg-[#14171a] sm:h-[32rem] md:h-[min(600px,95vw)] lg:h-[420px]">
                   <Image
                     src={image}
                     alt={name}
@@ -160,8 +160,8 @@ export function Team() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="-left-4 border-0 bg-[#65891c] text-white shadow-lg hover:bg-[#bafc0c] hover:text-[#65891c] sm:-left-5" />
-        <CarouselNext className="-right-4 border-0 bg-[#65891c] text-white shadow-lg hover:bg-[#bafc0c] hover:text-[#65891c] sm:-right-5" />
+        <CarouselPrevious className="-left-4 translate-y-0 border-0 bg-[#65891c] text-white shadow-lg active:translate-y-0 hover:bg-[#bafc0c] hover:text-[#65891c] sm:-left-5" />
+        <CarouselNext className="-right-4 translate-y-0 border-0 bg-[#65891c] text-white shadow-lg active:translate-y-0 hover:bg-[#bafc0c] hover:text-[#65891c] sm:-right-5" />
       </Carousel>
     </section>
   );
