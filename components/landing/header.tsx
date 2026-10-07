@@ -56,7 +56,7 @@ export function Header() {
           Questions fréquentes
         </a>
         <a
-          className="ml-1 rounded-xl border-2 border-[#65891c] px-3 py-2 text-white hover:bg-[#65891c]"
+          className="ml-1 hidden rounded-xl border-2 border-[#65891c] px-3 py-2 text-white hover:bg-[#65891c] sm:block"
           href="#project-form"
         >
           Nous contacter
