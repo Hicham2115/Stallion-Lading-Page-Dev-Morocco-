@@ -156,7 +156,7 @@ export function Closing() {
         `Téléphone : ${data.phone}`,
       ].join("\n");
       window.open(
-        `https://wa.me/31687627929?text=${encodeURIComponent(message)}`,
+        `https://wa.me/212649557449?text=${encodeURIComponent(message)}`,
         "_blank",
         "noopener,noreferrer",
       );
