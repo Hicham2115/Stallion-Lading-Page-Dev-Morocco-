@@ -4,11 +4,11 @@ import { Pause, Play, Volume2, VolumeX } from "lucide-react";
 import { useRef, useState } from "react";
 
 const videos = [
-  { file: "IMG_5610.2-mobile.mp4", poster: "IMG_5610.2.jpg" },
   { file: "IMG_5717.mp4", poster: "IMG_5717.jpg" },
   { file: "IMG_5529.mp4", poster: "IMG_5529.jpg" },
   { file: "IMG_5580.mp4", poster: "IMG_5580.jpg" },
   { file: "IMG_5541.mp4", poster: "IMG_5541.jpg" },
+  { file: "IMG_5610.2-mobile.mp4", poster: "IMG_5610.2.jpg" },
 ];
 
 export function Testimonials() {
