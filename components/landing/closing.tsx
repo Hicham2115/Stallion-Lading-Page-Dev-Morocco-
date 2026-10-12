@@ -17,10 +17,12 @@ const trackPixel = (event: string, data?: Record<string, unknown>) =>
 const projectTypes = [
   "Site vitrine",
   "Boutique en ligne",
+  "Marketplace",
   "CRM",
   "Plateforme",
   "Application mobile",
-  "Produit SaaS",
+  "SaaS",
+  "Automatisation",
 ];
 const timelines = [
   "Dans le mois",
