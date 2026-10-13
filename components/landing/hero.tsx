@@ -20,7 +20,7 @@ export function Hero() {
         <source src="/video-hero.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#0a0c0d]/70 to-[#0a0c0d]/55" />
-      <div className="w-full max-w-[1050px] px-5 pt-28 pb-18 text-center">
+      <div className="w-full max-w-[1050px] px-5 pt-8 pb-18 text-center">
         <p className="animate-[hero-fade-up_.7s_cubic-bezier(.22,1,.36,1)_both] inline-flex max-w-full items-center gap-2 whitespace-nowrap rounded-full border border-[#65891c]/50 bg-[#65891c]/15 px-2.5 py-2 font-mono text-[9px] uppercase tracking-[.12em] text-[#bafc0c] sm:px-3.5 sm:text-[11px] sm:tracking-[.2em]">
           <span className="size-1.5 shrink-0 rounded-full bg-[#bafc0c] shadow-[0_0_10px_#bafc0c]" />
           Obtenez votre prototype gratuitement

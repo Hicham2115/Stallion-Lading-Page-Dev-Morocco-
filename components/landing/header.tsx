@@ -1,21 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 24);
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <header
-      className={`fixed top-10 left-0 z-50 flex h-18 w-full items-center justify-between px-5 transition-colors duration-300 sm:px-8 lg:px-16 ${scrolled ? "bg-[#0a0c0d]/90 shadow-lg backdrop-blur-md" : "bg-transparent"}`}
+      className="absolute left-0 top-0 z-50 flex h-18 w-full items-center justify-between bg-transparent px-5 sm:px-8 lg:px-16"
     >
       <a
         className="flex items-center gap-2 text-xs font-extrabold tracking-[.08em] sm:text-sm"
